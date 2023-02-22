@@ -5,9 +5,12 @@ const path = require('path');
 
 
 
-app.use("/", express.static("https://www.youtube.com/watch?v=WqdmgnScCgc"))
+// app.use("/", express.static("https://www.youtube.com/watch?v=WqdmgnScCgc"))
 
-
+app.ger("/" , (req,res)=>{
+    res.send("foi")
+} 
+    )
 
 app.post("/convert", express.json(), (req, res) => {
 
