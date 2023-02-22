@@ -5,12 +5,9 @@ const path = require('path');
 
 
 
-// app.use("/", express.static("https://www.youtube.com/watch?v=WqdmgnScCgc"))
+app.use("/", express.static("https://tiny-chaja-b006b9.netlify.app/"))
 
-app.get("/" , (req,res)=>{
-    res.send("foi")
-} 
-    )
+
 
 app.post("/convert", express.json(), (req, res) => {
 
