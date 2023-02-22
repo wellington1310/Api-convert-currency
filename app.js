@@ -3,7 +3,7 @@ const app = express();
 const fetch = require('cross-fetch');
 const path = require('path');
 
-const PORT = process.env.PORT || 3001
+//const PORT = process.env.PORT || 3001
 
 // app.use("/", express.static(path.join(__dirname, "/build")))
 
@@ -52,7 +52,7 @@ app.post("/convert", express.json(), (req, res) => {
 
 
 
-app.listen(PORT, (err) => {
+app.listen(3000, (err) => {
 
     if (err) {
         console.log(err);
