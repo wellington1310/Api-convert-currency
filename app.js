@@ -7,7 +7,7 @@ const path = require('path');
 
 // app.use("/", express.static("https://www.youtube.com/watch?v=WqdmgnScCgc"))
 
-app.ger("/" , (req,res)=>{
+app.get("/" , (req,res)=>{
     res.send("foi")
 } 
     )
