@@ -3,13 +3,10 @@ const app = express();
 const fetch = require('cross-fetch');
 const path = require('path');
 
-//const PORT = process.env.PORT || 3001
 
-// app.use("/", express.static(path.join(__dirname, "/build")))
 
-app.get("/" , (req , res)=>{
-    res.send(foi)
-}
+app.use("/", express.static(path.join("https://wellington1310.github.io/jogo-da-velha-JavaScript/")))
+
 
 
 app.post("/convert", express.json(), (req, res) => {
