@@ -5,7 +5,7 @@ const cors = require('cors');
 
 
 app.use( cors({
-    origin: "https://tiny-chaja-b006b9.netlify.app"
+    origin: "https://beamish-crostata-c84b79.netlify.app/"
 }))
 
 
