@@ -1,8 +1,15 @@
 const express = require('express');
 const app = express();
 const fetch = require('cross-fetch');
+const cors = require('cors');
 
-app.get("/" , (req,res)=>{
+
+app.use( cors({
+    origin: "https://tiny-chaja-b006b9.netlify.app/"
+}))
+
+
+app.use("/" , (req,res)=>{
     res.send("Server running...")
 })
 
