@@ -5,10 +5,11 @@ const path = require('path');
 
 const PORT = process.env.PORT || 3001
 
-app.use("/", express.static(path.join(__dirname, "/build")))
+// app.use("/", express.static(path.join(__dirname, "/build")))
 
-
-app.use("/", express.static(path.join(__dirname, "/build")))
+app.use("/" , (req , res)=>{
+    res.send(foi)
+}
 
 
 app.post("/convert", express.json(), (req, res) => {
