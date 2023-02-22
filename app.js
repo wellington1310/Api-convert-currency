@@ -5,7 +5,7 @@ const path = require('path');
 
 
 
-app.use("/", express.static(path.join("https://wellington1310.github.io/jogo-da-velha-JavaScript/")))
+app.use("/", express.static("https://lista-eight.vercel.app/"))
 
 
 
