@@ -5,7 +5,7 @@ const cors = require('cors');
 
 
 app.use( cors({
-    origin: "https://beamish-crostata-c84b79.netlify.app"
+    origin: "https://convert-currency-wellington.netlify.app/"
 }))
 
 
